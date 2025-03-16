@@ -2,12 +2,14 @@
 name = "anonymize-app"
 version = "0.0.1"
 description = "The service for anonymizing CV files."
-requires-python = "==3.9"
+requires-python = "==3.10"
 dependencies = [
     "pydantic-settings",
     "fastapi[all]",
     "uvicorn",
     "fitz",
+    "spacy<3.8.0",
+    "numpy==1.26.4",
     "presidio_analyzer",
     "python-multipart",
 ]

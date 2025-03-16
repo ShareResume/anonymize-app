@@ -1,0 +1,10 @@
+.git/
+venv/
+**/__pycache__/
+**/anonymize_app.egg-info/
+
+.env.local
+.dockerignore
+.gitignore
+Dockerfile
+pyproject.toml
