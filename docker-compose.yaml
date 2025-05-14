@@ -1,0 +1,14 @@
+services:
+ 
+ anon-app:
+    container_name: share-resume-anon-app
+    build:
+      context: ../anonymize-app/
+      dockerfile: Dockerfile
+    environment:
+      - "API_KEY=${ANONYMIZER_INTEGRATOR_TOKEN}"
+      - "PYTHONPATH=/app/src"
+      - "PORT=8000"
+      - "DEBUG=0"
+    ports:
+      - "8000:8000"
